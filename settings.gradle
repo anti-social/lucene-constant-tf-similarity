@@ -1,0 +1,4 @@
+include 'lucene', 'elasticsearch'
+
+project(':lucene').name = 'lucene-constant-tf-similarity'
+project(':elasticsearch').name = 'elasticsearch-constant-tf-similarity'

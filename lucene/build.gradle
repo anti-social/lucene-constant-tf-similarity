@@ -1,0 +1,5 @@
+description = 'Similarity with tf that always equals 1'
+
+dependencies {
+    compile "org.apache.lucene:lucene-core:$luceneVersion"
+}

@@ -1,0 +1,18 @@
+subprojects {
+    apply plugin: 'java'
+
+    version = '0.1-dev'
+
+    sourceCompatibility = '1.7'
+
+    compileJava.options.encoding = 'UTF-8'
+
+    ext {
+        elasticsearchVersion = '1.7.2'
+        luceneVersion = '4.10.4'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+}

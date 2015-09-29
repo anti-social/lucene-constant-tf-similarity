@@ -1,0 +1,14 @@
+description = 'Similarity with tf that always equals 1. Elasticsearch plugin'
+
+dependencies {
+    compile project(':lucene-constant-tf-similarity')
+    compile "org.elasticsearch:elasticsearch:$elasticsearchVersion"
+}
+
+task buildZip(type: Zip) {
+    from jar
+    from configurations.runtime
+    include 'lucene-constant-tf-similarity-*.jar', 'elasticsearch-constant-tf-similarity-*.jar'
+}
+
+build.dependsOn buildZip
